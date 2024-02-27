@@ -1,7 +1,8 @@
 
 
 body {
-  background-color: #0a2811;
+  background-color:   #8f9779;
+  background: linear-gradient(to right, #8f9779 0%, #fbeee0 200%);
   font-family: 'Anta', sans-serif;
   
   
@@ -67,6 +68,7 @@ body {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  
  
   
 }
@@ -79,11 +81,13 @@ body {
 .centered-contact {
   color: #ffffff;
   justify-self: left;
-  grid-row: 1/5; /* span from row 1 to row 5 */
-  grid-column: 2/4; /* span from column 1 to column 4 */
+  grid-row: 1 / span 100; /* start from row 4 and span enough rows to accommodate expansion */
+  grid-column: 2 / span 2; /* expand horizontally based on content */
+  background-color: #8f9779;
+  border: 10px solid #422800;
+  border-radius: 30px;
+  padding-left: 15px;
 }
-
-
 .UDbuttons{
   background-color: #fbeee0;
   border: 2px solid #422800;
@@ -109,12 +113,13 @@ body {
   background-color: #fbeee0;
   box-shadow: #422800 -100px 0px 0 0; /* Adjust the shadow color and size as needed */
   border: 10px solid #422800;
-  border-radius:35px;
+  border-radius:25px;
   position: fixed;
   top: 0;
   left: 10;
   height: 100%;
   width: 250px; /* Adjust the width as needed */
+  
 }
 
 .sidebar::before,
@@ -179,3 +184,4 @@ body {
   box-shadow: #422800 2px 2px 0 0;
   transform: translate(2px, 2px);
 }
+
