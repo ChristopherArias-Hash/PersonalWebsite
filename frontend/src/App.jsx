@@ -47,15 +47,16 @@ function App() {
 
   return (
     <>
-      <div className = "container">
-      <div className="centered-contact">
-      {/* ContactList component to display the list of contacts */}
-      <ContactList contacts={contacts} updateContact={openEditModal} updateCallback={onUpdate} />
-     
-      {/* Button to open the modal for creating a new contact */}
-     
-      <button className ="submitButton" onClick={openCreateModal}>Create New Contact</button>
-      </div>
+      <div className = "sidebar"></div>
+      <div className="container">
+        
+        <div className="centered-contact">
+          {/* ContactList component to display the list of contacts */}
+          <ContactList contacts={contacts} updateContact={openEditModal} updateCallback={onUpdate} />
+  
+          {/* Button to open the modal for creating a new contact */}
+          <button className="submitButton" onClick={openCreateModal}>Create New Contact</button>
+        </div>
       </div>
       {/* Modal for editing an existing contact */}
       {isModalOpen && (
@@ -63,11 +64,15 @@ function App() {
           <div className="modal-content">
             <span className="close" onClick={closeModal}>&times;</span>
             <ContactForm existingContact={currentContact} updateCallback={onUpdate} />
+            {/* Left side of the modal */}
+            
+              {/* Content for the left side */}
+             
           </div>
         </div>
       )}
     </>
   );
-}
+      }  
 
 export default App;

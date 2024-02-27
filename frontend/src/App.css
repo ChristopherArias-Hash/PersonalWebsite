@@ -1,9 +1,10 @@
 
 
 body {
-  background-color: #010b00;
+  background-color: #044209;
   font-family: 'Anta', sans-serif;
-  box-shadow: 0 0 0 6px #fbeee0;
+  
+  
 }
 
 .container {
@@ -76,10 +77,10 @@ body {
 }
 
 .centered-contact {
-  color: #fcf7f7dc;
-  justify-self: center;
+  color: #ffffff;
+  justify-self: left;
   grid-row: 1/5; /* span from row 1 to row 5 */
-  grid-column: 1/4; /* span from column 1 to column 4 */
+  grid-column: 2/4; /* span from column 1 to column 4 */
 }
 
 
@@ -101,4 +102,37 @@ body {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+}
+
+
+.sidebar {
+  background-color: #fbeee0;
+  box-shadow: #422800 -100px 0px 0 0; /* Adjust the shadow color and size as needed */
+  border: 10px solid #422800;
+  border-radius:35px;
+  position: fixed;
+  top: 0;
+  left: 10;
+  height: 100%;
+  width: 250px; /* Adjust the width as needed */
+}
+
+.sidebar::before,
+.sidebar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 70px; /* Adjust the width of the shadow as needed */
+}
+
+
+.sidebar::before {
+  left: -10px; /* Set the distance of the shadow from the left side */
+  box-shadow: 10px 0 10px -10px #422800; /* Adjust the shadow color and size as needed */
+}
+
+.sidebar::after {
+  right: -10px; /* Set the distance of the shadow from the right side */
+  box-shadow: -10px 0 10px -10px #422800; /* Adjust the shadow color and size as needed */
 }
