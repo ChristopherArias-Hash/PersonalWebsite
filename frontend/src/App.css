@@ -1,7 +1,7 @@
 
 
 body {
-  background-color: #044209;
+  background-color: #0a2811;
   font-family: 'Anta', sans-serif;
   
   
@@ -135,4 +135,47 @@ body {
 .sidebar::after {
   right: -10px; /* Set the distance of the shadow from the right side */
   box-shadow: -10px 0 10px -10px #422800; /* Adjust the shadow color and size as needed */
+}
+
+.centered-sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 250px;
+}
+
+.centered-sidebar button {
+  margin-bottom: 20px; /* Add some spacing between the buttons */
+}
+
+.welcomeSign{
+  margin-bottom: 150px;
+  font-size: 30px;
+  
+}
+
+.SBbuttons{
+  background-color: #fbeee0;
+  border: 3px solid #422800;
+  border-radius: 0px;
+  box-shadow: #422800 0px 4px  0 0 ;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 30px;
+  width: 130px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.SBbuttons:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
 }

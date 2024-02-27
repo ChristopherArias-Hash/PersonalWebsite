@@ -1,11 +1,16 @@
 import { useState, useEffect } from "react";
+import Sidebar from "./SideBar"
 import ContactList from "./ContactList";
 import "./App.css";
 import ContactForm from "./ContactForm";
 
+
 function App() {
   // State variables
   const [contacts, setContacts] = useState([]);
+  const sidebarData = [
+    { id: 1, welcome: "" , home: "HOME", aboutMe: "ABOUT ME", projects: "PROJECTS", gitHub: "GITHUB" },
+  ]
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentContact, setCurrentContact] = useState({});
 
@@ -47,7 +52,11 @@ function App() {
 
   return (
     <>
-      <div className = "sidebar"></div>
+      <div className = "sidebar">
+        <div className = "centered-sidebar">
+         <Sidebar sidebar={sidebarData} />
+         </div>
+      </div>
       <div className="container">
         
         <div className="centered-contact">
