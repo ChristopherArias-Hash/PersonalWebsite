@@ -85,7 +85,6 @@ body {
   grid-column: 2 / span 2; /* expand horizontally based on content */
   background-color: #8f9779;
   border: 10px solid #422800;
-  border-radius: 30px;
   padding-left: 15px;
 }
 .UDbuttons{

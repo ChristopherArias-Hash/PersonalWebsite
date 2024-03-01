@@ -1,15 +1,14 @@
-import { useState, useEffect } from "react";
-import Sidebar from "./SideBar"
-import ContactList from "./ContactList";
-import "./App.css";
-import ContactForm from "./ContactForm";
+import React, { useState, useEffect } from "react";
+import Sidebar from "./components/SideBar";
+import ContactList from "./components/ContactList";
+import "./ProjectApp.css";
+import ContactForm from "./components/ContactForm";
 
-
-function App() {
+function projectApp() {
   // State variables
   const [contacts, setContacts] = useState([]);
   const sidebarData = [
-    { id: 1, welcome: "" , home: "HOME", aboutMe: "ABOUT ME", projects: "PROJECTS", gitHub: "GITHUB" },
+    { id: 1, welcome: "", home: "HOME", aboutMe: "ABOUT ME", projects: "PROJECTS", gitHub: "GITHUB" },
   ]
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentContact, setCurrentContact] = useState({});
@@ -52,36 +51,32 @@ function App() {
 
   return (
     <>
-      <div className = "sidebar">
-        <div className = "centered-sidebar">
-         <Sidebar sidebar={sidebarData} />
-         </div>
-      </div>
-      <div className="container">
-        
-        <div className="centered-contact">
+    <div className = "sidebar">
+       <div className = "centered-sidebar">
+          <Sidebar sidebar={sidebarData} />
+       </div>
+    </div>
+    <div className="container">
+       <div className="centered-contact">
           {/* ContactList component to display the list of contacts */}
           <ContactList contacts={contacts} updateContact={openEditModal} updateCallback={onUpdate} />
-  
           {/* Button to open the modal for creating a new contact */}
           <button className="submitButton" onClick={openCreateModal}>Create New Contact</button>
-        </div>
-      </div>
-      {/* Modal for editing an existing contact */}
-      {isModalOpen && (
-        <div className="modal">
-          <div className="modal-content">
-            <span className="close" onClick={closeModal}>&times;</span>
-            <ContactForm existingContact={currentContact} updateCallback={onUpdate} />
-            {/* Left side of the modal */}
-            
-              {/* Content for the left side */}
-             
-          </div>
-        </div>
-      )}
+       </div>
+    </div>
+    {/* Modal for editing an existing contact */}
+    {isModalOpen && (
+    <div className="modal">
+       <div className="modal-content">
+          <span className="close" onClick={closeModal}>&times;</span>
+          <ContactForm existingContact={currentContact} updateCallback={onUpdate} />
+          {/* Left side of the modal */}
+          {/* Content for the left side */}
+       </div>
+    </div>
+    )}
     </>
   );
-      }  
+}
 
-export default App;
+export default projectApp;
