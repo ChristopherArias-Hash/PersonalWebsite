@@ -13,7 +13,7 @@ function AboutMe() {
           <Sidebar sidebar={sidebarData} />
         </div>
       </div>
-      <h1>Main Page</h1>
+      <p>Main Page</p>
       {/* Your main page content */}
     </div>
   );

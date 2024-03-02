@@ -1,5 +1,9 @@
 import React from 'react';
 import Sidebar from './components/SideBar';
+import HomeContent from './components/HomeContent';
+import "./Home.css";
+
+
 
 const sidebarData = [
   { id: 1, welcome: "", home: "HOME", aboutMe: "ABOUT ME", projects: "PROJECTS", gitHub: "GITHUB" },
@@ -7,15 +11,20 @@ const sidebarData = [
 
 function Home() {
   return (
-    <div>
+    <>
+      
       <div className="sidebar">
         <div className="centered-sidebar">
           <Sidebar sidebar={sidebarData} />
         </div>
       </div>
-      <h1>Main Page</h1>
-      {/* Your main page content */}
-    </div>
+      
+      <div className="container">
+      <HomeContent />
+      
+      </div>
+
+      </>
   );
 }
 

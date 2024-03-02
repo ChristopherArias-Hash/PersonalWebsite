@@ -1,21 +1,5 @@
 
 
-body {
-  background-color:   #8f9779;
-  background: linear-gradient(to right, #8f9779 0%, #fbeee0 200%);
-  font-family: 'Anta', sans-serif;
-  
-  
-}
-
-.container {
-  display: grid;
-  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px ;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: start;
-  
-  
-}
 
 .modal {
   position: fixed;
@@ -83,7 +67,7 @@ body {
   justify-self: left;
   grid-row: 1 / span 100; /* start from row 4 and span enough rows to accommodate expansion */
   grid-column: 2 / span 2; /* expand horizontally based on content */
-  background-color: #8f9779;
+  background-color: #5a5a5a;
   border: 10px solid #422800;
   padding-left: 15px;
 }
@@ -108,57 +92,7 @@ body {
 }
 
 
-.sidebar {
-  background-color: #fbeee0;
-  box-shadow: #422800 -100px 0px 0 0; /* Adjust the shadow color and size as needed */
-  border: 10px solid #422800;
-  border-radius:25px;
-  position: fixed;
-  top: 0;
-  left: 10;
-  height: 100%;
-  width: 250px; /* Adjust the width as needed */
-  
-}
 
-.sidebar::before,
-.sidebar::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 70px; /* Adjust the width of the shadow as needed */
-}
-
-
-.sidebar::before {
-  left: -10px; /* Set the distance of the shadow from the left side */
-  box-shadow: 10px 0 10px -10px #422800; /* Adjust the shadow color and size as needed */
-}
-
-.sidebar::after {
-  right: -10px; /* Set the distance of the shadow from the right side */
-  box-shadow: -10px 0 10px -10px #422800; /* Adjust the shadow color and size as needed */
-}
-
-.centered-sidebar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 70%;
-  width: 250px;
-}
-
-.centered-sidebar button {
-  margin-bottom: 20px; /* Add some spacing between the buttons */
-}
-
-.welcomeSign{
-  margin-bottom: 150px;
-  font-size: 30px;
-  
-}
 
 .SBbuttons{
   background-color: #fbeee0;

@@ -5,7 +5,8 @@ import Home from './Home.jsx'; // Updated import
 import ProjectApp from './projectapp.jsx'; // Updated import
 import AboutMe from './AboutMe.jsx';
 import './index.css';
-import './ProjectApp.css'
+import './ProjectApp.css';
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>

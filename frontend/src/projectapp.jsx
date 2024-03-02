@@ -4,6 +4,7 @@ import ContactList from "./components/ContactList";
 import "./ProjectApp.css";
 import ContactForm from "./components/ContactForm";
 
+
 function projectApp() {
   // State variables
   const [contacts, setContacts] = useState([]);
