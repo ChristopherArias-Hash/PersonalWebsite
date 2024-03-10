@@ -12,18 +12,19 @@ const sidebarData = [
 function Home() {
   return (
     <>
-      
+      <div class ="spacer layer1"></div>
       <div className="sidebar">
         <div className="centered-sidebar">
           <Sidebar sidebar={sidebarData} />
         </div>
       </div>
-      
-      <div className="container">
+      <div className="containerMain">
+        
       <HomeContent />
-      
-      </div>
 
+      </div>
+      
+      
       </>
   );
 }

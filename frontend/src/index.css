@@ -11,30 +11,29 @@ input, button, label {
   grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px ;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: start;
-  
-  
 }
 
 
 body {
-  background-color:   #282a28;
-  
-  font-family: 'Anta', sans-serif;
-  
-
+  background-color:   #EDF2F4;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+ 
 }
 
 
 .sidebar {
-  background-color: #fbeee0;
-  box-shadow: #422800 -100px 0px 0 0; /* Adjust the shadow color and size as needed */
-  border: 10px solid #422800;
+  background-color: #8D99AE;
+  box-shadow: #2B2D42 -100px 0px 0 0; /* Adjust the shadow color and size as needed */
+  border: 10px solid #2B2D42;
   border-radius:25px;
   position: fixed;
   top: 0;
   left: 10;
-  height: 100%;
+  height: 100vh; /* Set the height of the body to 100% of the viewport height */
   width: 250px; /* Adjust the width as needed */
+  z-index: 100; /* Add a higher z-index */
   
 }
 
@@ -50,13 +49,42 @@ body {
 
 .sidebar::before {
   left: -10px; /* Set the distance of the shadow from the left side */
-  box-shadow: 10px 0 10px -10px #422800; /* Adjust the shadow color and size as needed */
+  box-shadow: 10px 0 10px -10px #2B2D42; /* Adjust the shadow color and size as needed */
 }
 
 .sidebar::after {
   right: -10px; /* Set the distance of the shadow from the right side */
-  box-shadow: -10px 0 10px -10px #422800; /* Adjust the shadow color and size as needed */
+  box-shadow: -10px 0 10px -10px #2B2D42; /* Adjust the shadow color and size as needed */
 }
+
+
+.SBbuttons{
+  background-color: #EDF2F4;
+  border: 2px solid #2B2D42;
+  border-radius: 0px;
+  box-shadow: #2B2D42 0px 4px  0 0 ;
+  color: #2B2D42;
+  cursor: pointer;
+  margin-bottom: 30px; 
+  display: block; 
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 30px;
+  width: 126px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  
+}
+
+.SBbuttons:active {
+  box-shadow: #2B2D42  2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+
 
 .centered-sidebar {
   display: flex;
@@ -69,11 +97,12 @@ body {
 
 .centered-sidebar button {
   margin-bottom: 20px; /* Add some spacing between the buttons */
+  width: 200px; /* Set a fixed width for the buttons */
 }
 
 .welcomeSign{
   margin-bottom: 150px;
-  font-size: 30px;
+  font-size: 34px;
   
 }
 

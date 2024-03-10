@@ -35,11 +35,11 @@
 }
 
 .submitButton {
-  background-color: #fbeee0;
-  border: 2px solid #422800;
+  background-color: #EDF2F4;
+  border: 2px solid #2B2D42;
   border-radius: 30px;
-  box-shadow: #422800 4px 4px 0 0;
-  color: #422800;
+  box-shadow: #2B2D42 4px 4px 0 0;
+  color: #2B2D42;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
@@ -58,25 +58,25 @@
 }
 
 .submitButton:active {
-  box-shadow: #422800 2px 2px 0 0;
+  box-shadow: #2B2D42 2px 2px 0 0;
   transform: translate(2px, 2px);
 }
 
 .centered-contact {
-  color: #ffffff;
+  color: #2B2D42;
   justify-self: left;
   grid-row: 1 / span 100; /* start from row 4 and span enough rows to accommodate expansion */
   grid-column: 2 / span 2; /* expand horizontally based on content */
-  background-color: #5a5a5a;
-  border: 10px solid #422800;
+  background-color: #8D99AE;
+  border: 10px solid #2B2D42;;
   padding-left: 15px;
 }
 .UDbuttons{
-  background-color: #fbeee0;
-  border: 2px solid #422800;
+  background-color: #EDF2F4;
+  border: 2px solid #2B2D42;
   border-radius: 30px;
-  box-shadow: #422800 4px 4px 0 0;
-  color: #422800;
+  box-shadow: #2B2D42 4px 4px 0 0;
+  color: #2B2D42;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
@@ -92,29 +92,4 @@
 }
 
 
-
-
-.SBbuttons{
-  background-color: #fbeee0;
-  border: 3px solid #422800;
-  border-radius: 0px;
-  box-shadow: #422800 0px 4px  0 0 ;
-  color: #422800;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 30px;
-  width: 130px;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.SBbuttons:active {
-  box-shadow: #422800 2px 2px 0 0;
-  transform: translate(2px, 2px);
-}
 
