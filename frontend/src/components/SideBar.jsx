@@ -13,26 +13,20 @@ const Sidebar = ({ sidebar }) => {
             {item.home}
           </Link>
         ))}
-      </div>
-      <div>
         {sidebar.map((item) => (
           <Link to="/AboutMe" className="SBbuttons" key={item.id}>
             {item.aboutMe}
           </Link>
         ))}
-      </div>
-      <div>
         {sidebar.map((item) => (
           <Link to="/projectApp" className="SBbuttons" key={item.id}>
             {item.projects}
           </Link>
         ))}
-      </div>
-      <div>
         {sidebar.map((item) => (
-          <Link to="https://github.com/ChristopherArias-Hash" target="_blank" className="SBbuttons" key={item.id}>
+          <a href="https://github.com/ChristopherArias-Hash" target="_blank" className="SBbuttons" key={item.id}>
             {item.gitHub}
-          </Link>
+          </a>
         ))}
       </div>
     </div>

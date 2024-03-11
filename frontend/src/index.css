@@ -11,6 +11,7 @@ input, button, label {
   grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px ;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: start;
+  height: 100vh;
 }
 
 
@@ -24,17 +25,20 @@ body {
 
 
 .sidebar {
+
   background-color: #8D99AE;
   box-shadow: #2B2D42 -100px 0px 0 0; /* Adjust the shadow color and size as needed */
   border: 10px solid #2B2D42;
-  border-radius:25px;
-  position: fixed;
+  border-radius: 20px;
+  position: relative;
   top: 0;
   left: 10;
-  height: 100vh; /* Set the height of the body to 100% of the viewport height */
-  width: 250px; /* Adjust the width as needed */
-  z-index: 100; /* Add a higher z-index */
+  height: 100px; /* Set the height of the navbar */
+  width: 100%; /* Set the width to fill the entire width of the screen */
+  z-index: 3; /* Add a higher z-index */
+  grid-column: 1/4;
   
+
 }
 
 .sidebar::before,
@@ -58,15 +62,17 @@ body {
 }
 
 
-.SBbuttons{
+.SBbuttons {
   background-color: #EDF2F4;
   border: 2px solid #2B2D42;
   border-radius: 0px;
-  box-shadow: #2B2D42 0px 4px  0 0 ;
+  box-shadow: #2B2D42 0px 4px 0 0;
   color: #2B2D42;
   cursor: pointer;
-  margin-bottom: 30px; 
-  display: block; 
+  margin-left: -30px; /* Adjust as needed */
+  margin-bottom: 125px; /* Adjust as needed */
+  margin-right: 80px; /* Adjust as needed */
+  display: inline-block;
   font-weight: 600;
   font-size: 15px;
   line-height: 30px;
@@ -76,8 +82,11 @@ body {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  position: relative;
   
 }
+
+
 
 .SBbuttons:active {
   box-shadow: #2B2D42  2px 2px 0 0;
@@ -87,12 +96,19 @@ body {
 
 
 .centered-sidebar {
+  /* Remove grid-column: 4/4; */
+  grid-row: 2/2; /* Add this property */
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   height: 70%;
-  width: 250px;
+   
+
+}
+
+.centered-sidebar button {
+  margin: 0 10px; /* Add some spacing between the buttons */
+  width: auto; /* Set width to auto to adjust based on content */
 }
 
 .centered-sidebar button {

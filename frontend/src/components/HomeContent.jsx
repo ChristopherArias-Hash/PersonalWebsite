@@ -15,10 +15,12 @@ const HomeContent = ({}) => {
                 Welcome to my website!
                 <br />
                 </h1></th>
-                <th><img src={WebImage} alt="Description of the image" className= "personal-image-container"/></th>
+                <th><img src={WebImage} alt="Photo of my self" className= "personal-image-container"/></th>
                 </tr>
             </table>
             
+            <div class ="spacer layer1"></div>
+
         </div>
     );
 };

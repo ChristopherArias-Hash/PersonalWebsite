@@ -52,12 +52,12 @@ function projectApp() {
 
   return (
     <>
+    <div className="container">
     <div className = "sidebar">
        <div className = "centered-sidebar">
           <Sidebar sidebar={sidebarData} />
        </div>
     </div>
-    <div className="container">
        <div className="centered-contact">
           {/* ContactList component to display the list of contacts */}
           <ContactList contacts={contacts} updateContact={openEditModal} updateCallback={onUpdate} />

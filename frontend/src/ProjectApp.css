@@ -65,11 +65,13 @@
 .centered-contact {
   color: #2B2D42;
   justify-self: left;
-  grid-row: 1 / span 100; /* start from row 4 and span enough rows to accommodate expansion */
-  grid-column: 2 / span 2; /* expand horizontally based on content */
+  grid-row: 2 / span 100; /* start from row 4 and span enough rows to accommodate expansion */
+  grid-column: 2 /2; /* expand horizontally based on content */
   background-color: #8D99AE;
   border: 10px solid #2B2D42;;
   padding-left: 15px;
+  margin-top: 50px;
+
 }
 .UDbuttons{
   background-color: #EDF2F4;
@@ -90,6 +92,5 @@
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-
 
 
