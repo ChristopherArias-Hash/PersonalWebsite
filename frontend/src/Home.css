@@ -27,7 +27,8 @@
 }
 
 .centered-content {
-  grid-row: 2/3;
+  display: flex; /* Use flexbox to align items */
+  grid-row: 2/5;
   grid-column: 2/2;
   z-index: 2; /* Set a higher z-index to ensure it's above the background wave */
   padding-left: 30px;
@@ -46,8 +47,6 @@
 }
 
 .personal-image-container {
-
-
   height: 400px;
   width: 350px;
   justify-self: center;
@@ -55,4 +54,22 @@
   border-radius: 50px;
   position: flex; /* Set the position to relative */
   z-index: 2; /* Set a higher z-index to ensure it's above the background wave */
+}
+
+.centered-content2{
+  display: flex; /* Use flexbox to align items */
+  grid-row: 7/11;
+  grid-column: 2/2;
+  padding-left: 30px;
+  margin-top: 20px;
+}
+
+.bi-linkedin{
+  height: 400px;
+  width: 350px;
+}
+
+.bi-envelope{
+  height: 400px;
+  width: 350px;
 }

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Sidebar from './components/SideBar';
 import HomeContent from './components/HomeContent';
+import HomeContent2 from './components/HomeContent2';
 import "./Home.css";
 
 const sidebarData = [
@@ -12,7 +13,7 @@ function Home() {
     const layer1 = document.querySelector('.layer1');
 
     const handleScroll = () => {
-      if (window.scrollY > 10 || window.innerWidth < 900) {
+      if (window.scrollY > 10 || window.innerWidth < 900 ||  window.innerHeight < 900 ) {
         layer1.classList.add('fade-out');
       } else {
         layer1.classList.remove('fade-out');
@@ -37,6 +38,8 @@ function Home() {
           </div>
         </div>
         <HomeContent />
+        <HomeContent2 />
+
       </div>
     </>
   );
