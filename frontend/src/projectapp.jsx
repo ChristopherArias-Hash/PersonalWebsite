@@ -74,6 +74,7 @@ function projectApp() {
           {/* Left side of the modal */}
           {/* Content for the left side */}
        </div>
+    
     </div>
     )}
     </>

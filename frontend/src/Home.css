@@ -1,22 +1,29 @@
 
 .spacer {
-  position: relative;
-  width: 100%;
+  position: fixed;
   padding-top: calc(400 / 4000 * 100%); /* Calculate the aspect ratio */
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  z-index: 20; /* Set a lower z-index to ensure it's below other content */
+  background-size: cover; 
+
 }
 
 .layer1 {
-  position: fixed;
+  position: flex;
+  max-width: 100%;
+  height: auto;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-image: url('./layer1.svg');
   z-index: -1; /* Set an even lower z-index to place it behind the content */
+  transition: opacity 0.5s ease; /* Add a transition for opacity */
+  
+}
+
+.layer1.fade-out {
+  opacity: 0; /* Set opacity to 0 to fade out */
 }
 
 .centered-content {
