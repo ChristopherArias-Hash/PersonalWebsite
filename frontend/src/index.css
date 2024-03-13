@@ -8,7 +8,7 @@ input, button, label {
 
 .container {
   display: grid;
-  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px ;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: start;
   height: 100vh;
@@ -28,22 +28,24 @@ body {
 
 .sidebar {
   background-color: #8D99AE;
-  box-shadow: #2B2D42 -100px 0px 0 0, 100px 0px 00 #2B2D42; /* Adjust the shadow color and size as needed */
+  box-shadow: #2B2D42 -100px 0px 0 0, 100px 0px 0 #2B2D42;
   border: 10px solid #2B2D42;
   border-radius: 200px;
   position: relative;
   top: 0;
   left: 10;
-  height: 100px; /* Set the height of the navbar */
-  width: 100%; /* Set the width to fill the entire width of the screen */
-  z-index: 3; /* Add a higher z-index */
+  height: 100px;
+  width: 100%;
+  z-index: 3;
   grid-column: 1 / 4;
-
-  /* Add the following */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  box-sizing: border-box;
+  opacity: 1; /* Initial opacity */
+  transition: opacity 0.5s ease; /* Apply transition to the opacity property */
 }
 
-
+.fade-out .sidebar {
+  opacity: 0; /* Fade out the sidebar */
+}
 .sidebar::before,
 .sidebar::after {
   content: "";

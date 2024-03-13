@@ -14,11 +14,6 @@ const Sidebar = ({ sidebar }) => {
           </Link>
         ))}
         {sidebar.map((item) => (
-          <Link to="/AboutMe" className="SBbuttons" key={item.id}>
-            {item.aboutMe}
-          </Link>
-        ))}
-        {sidebar.map((item) => (
           <Link to="/projectApp" className="SBbuttons" key={item.id}>
             {item.projects}
           </Link>

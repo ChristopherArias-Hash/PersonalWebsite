@@ -1,22 +1,25 @@
 import React, { useEffect } from 'react';
 import Sidebar from './components/SideBar';
 import HomeContent from './components/HomeContent';
-import HomeContent2 from './components/HomeContent2';
 import "./Home.css";
 
 const sidebarData = [
-  { id: 1, welcome: "", home: "HOME", aboutMe: "ABOUT ME", projects: "PROJECTS", gitHub: "GITHUB" },
+  { id: 1, welcome: "", home: "HOME", projects: "PROJECTS", gitHub: "GITHUB" },
 ];
 
 function Home() {
   useEffect(() => {
     const layer1 = document.querySelector('.layer1');
+    const sidebar = document.querySelector('.sidebar');
 
     const handleScroll = () => {
-      if (window.scrollY > 10 || window.innerWidth < 900 ||  window.innerHeight < 900 ) {
+      const scrollThreshold = 10; // Adjust this value as needed
+      if (window.scrollY > scrollThreshold || window.innerWidth < 900 || window.innerHeight < 900) {
         layer1.classList.add('fade-out');
+        sidebar.style.display = 'none'; // Hide the sidebar
       } else {
         layer1.classList.remove('fade-out');
+        sidebar.style.display = 'block'; // Show the sidebar
       }
     };
 
@@ -38,11 +41,10 @@ function Home() {
           </div>
         </div>
         <HomeContent />
-        <HomeContent2 />
-
       </div>
     </>
   );
 }
+
 
 export default Home;
