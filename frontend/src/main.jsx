@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Home.jsx'; // Updated import
 import ProjectApp from './projectapp.jsx'; // Updated import
-import AboutMe from './AboutMe.jsx';
+import Projects from './Projects.jsx'
 import './index.css';
 import './ProjectApp.css';
 
@@ -12,8 +12,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <Routes>
         <Route index element={<Home />} />
+        <Route path="/Projects" element={<Projects />} />
         <Route path="/projectapp" element={<ProjectApp />} />
-        <Route path="/AboutMe" element={<AboutMe />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

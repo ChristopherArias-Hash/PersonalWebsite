@@ -54,8 +54,8 @@ const HomeContent = () => {
             </h1>
          
             <h1><div className="content-headers">Certifcations:</div>  
-                Google IT Automation with Python
-
+                <a href ="https://www.coursera.org/account/accomplishments/specialization/U52H673Z4CH8">
+                    Google IT Automation with Python</a>
             </h1>
             <div className="spacer blob"></div>
             <div className="spacer blob2"></div>

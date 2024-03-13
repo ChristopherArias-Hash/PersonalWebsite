@@ -14,7 +14,7 @@ const Sidebar = ({ sidebar }) => {
           </Link>
         ))}
         {sidebar.map((item) => (
-          <Link to="/projectApp" className="SBbuttons" key={item.id}>
+          <Link to="/Projects" className="SBbuttons" key={item.id}>
             {item.projects}
           </Link>
         ))}
