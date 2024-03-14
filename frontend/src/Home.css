@@ -80,11 +80,15 @@
   height: 370px;
   width: 350px;
   justify-self: center;
-  padding-left: 100px;
-  border-radius: 50px;
-  position: flex; /* Set the position to relative */
+  margin-left: 80px;
+  border: 5px solid #2B2D42; /* Add solid border with color */
+  border-radius: 10px; /* Correct the border-radius value */
   z-index: 1; /* Set a higher z-index to ensure it's above the background wave */
+  
+  /* Add box shadow */
+  box-shadow: 0 8px 10px #2B2D42 /* Adjust the shadow values as needed */
 }
+
 
 .centered-content2{
   display: flex; /* Use flexbox to align items */
@@ -113,7 +117,7 @@
 }
 .picture-buttons{
   background-color: #EDF2F4;
-  border: 3px solid #2B2D42;
+  border: 4px solid #2B2D42;
   border-radius: 0px;
   box-shadow: #2B2D42 0px 4px 0 0;
   color: #2B2D42;
