@@ -28,7 +28,7 @@ function Home() {
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', handleScroll);
+      window.removeEventListener('resize', handleScroll); //test
     };
   }, []);
 
