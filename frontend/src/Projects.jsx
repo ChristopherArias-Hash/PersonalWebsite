@@ -1,11 +1,17 @@
 import React, { useEffect } from 'react';
 import Sidebar from './components/SideBar';
 import HomeContent from './components/ProjectsContent';
+import ProjectButtons from './components/ProjectButtons';
 import "./Projects.css";
 
 const sidebarData = [
   { id: 1, welcome: "", home: "HOME", projects: "PROJECTS", gitHub: "GITHUB" },
 ];
+
+const projectButtonsData = [
+  { id: 1, ContactListButton: "Open Project"}
+];
+
 
 function Projects() {
   useEffect(() => {
@@ -38,9 +44,13 @@ function Projects() {
         <div className="sidebar">
           <div className="centered-sidebar">
             <Sidebar sidebar={sidebarData} />
+            
           </div>
         </div>
+        <div className="centered-projects-content">
         <HomeContent />
+        <ProjectButtons projectbuttons = {projectButtonsData} />
+        </div>
       </div>
     </>
   );
