@@ -166,3 +166,27 @@ body {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .SBbuttons{
+    background-color: #EDF2F4;
+    border: 2px solid #2B2D42;
+    border-radius: 0px;
+    box-shadow: #2B2D42 0px 4px 0 0;
+    color: #2B2D42;
+    cursor: pointer;
+    margin-left: -80px; /* Adjust as needed */
+    margin-bottom: 125px; /* Adjust as needed */
+    margin-right: 85px; /* Adjust as needed */
+    display: inline-block;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+    width: 90px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    position: relative;
+  }
+}
