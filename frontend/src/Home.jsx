@@ -14,7 +14,7 @@ function Home() {
 
     const handleScroll = () => {
       const scrollThreshold = 10; // Adjust this value as needed
-      if (window.scrollY > scrollThreshold || window.innerWidth < 900 || window.innerHeight < 900) {
+      if (window.scrollY > scrollThreshold || window.innerWidth < 500 || window.innerHeight < 500) {
         layer1.classList.add('fade-out');
         sidebar.style.display = 'none'; // Hide the sidebar
       } else {

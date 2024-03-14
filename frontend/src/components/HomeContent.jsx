@@ -57,8 +57,10 @@ const HomeContent = () => {
                 <a href ="https://www.coursera.org/account/accomplishments/specialization/U52H673Z4CH8">
                     Google IT Automation with Python</a>
             </h1>
+            <div className="spacer-test">
             <div className="spacer blob"></div>
             <div className="spacer blob2"></div>
+            </div>
                 </div>
         </>
     );
