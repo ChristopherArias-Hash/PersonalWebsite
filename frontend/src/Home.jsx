@@ -10,7 +10,7 @@ const sidebarData = [
 function Home() {
   useEffect(() => {
     const layer1 = document.querySelector('.layer1');
-    const sidebar = document.querySelector('.sidebar');
+    const sidebar = document.querySelector('.Sidebar'); // Fixed typo
 
     const handleScroll = () => {
       const scrollThreshold = 10; // Adjust this value as needed
@@ -45,6 +45,5 @@ function Home() {
     </>
   );
 }
-
 
 export default Home;

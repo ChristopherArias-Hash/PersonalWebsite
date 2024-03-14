@@ -157,7 +157,7 @@
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .centered-content,
   .centered-content2,
   .centered-content3 {
@@ -179,3 +179,5 @@
     justify-content: center; /* Center the buttons horizontally */
   }
 }
+
+
