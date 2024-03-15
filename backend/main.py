@@ -84,6 +84,5 @@ if __name__ == "__main__":
         db.create_all()
 
     # Run the application in debug mode
-    
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(debug=True)
 

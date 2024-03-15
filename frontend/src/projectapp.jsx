@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Sidebar from "./components/SideBar";
 import ContactList from "./components/ContactList";
-import "./ProjectApp.css";
 import ContactForm from "./components/ContactForm";
+
+import "./ProjectApp.css";
+
 
 
 function projectApp() {

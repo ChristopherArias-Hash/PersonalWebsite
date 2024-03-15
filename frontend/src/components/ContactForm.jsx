@@ -1,4 +1,5 @@
 import { useState } from "react";
+import React from 'react';
 
 const ContactForm = ({ existingContact = {}, updateCallback }) => {
   // State variables for form inputs
