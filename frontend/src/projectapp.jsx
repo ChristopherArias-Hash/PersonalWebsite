@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Sidebar from "./components/SideBar";
 import ContactList from "./components/ContactList";
 import ContactForm from "./components/ContactForm";
-
 import "./ProjectApp.css";
 
 
@@ -23,7 +22,7 @@ function projectApp() {
 
   // Fetch contacts data from the server
   const fetchContacts = async () => {
-    const response = await fetch("http://127.0.0.1:5000/contacts");
+    const response = await fetch("http://127.0.0.1:5173/contacts");
     const data = await response.json();
     setContacts(data.contacts);
   };
