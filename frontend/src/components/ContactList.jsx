@@ -22,6 +22,8 @@ const ContactList = ({ contacts, updateContact, updateCallback }) => {
 
     return (
         <div>
+            <h1 className="center-top-text">Welcome!</h1>
+            <h2 className="center-top-text">Leave your contact info!</h2>
             <h2>Contacts</h2>
             <table>
                 <thead>
