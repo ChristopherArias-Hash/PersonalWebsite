@@ -174,9 +174,9 @@ body {
     box-shadow: #2B2D42 0px 4px 0 0;
     color: #2B2D42;
     cursor: pointer;
-    margin-left: -80px; /* Adjust as needed */
+    margin-left: -20px; /* Adjust as needed */
     margin-bottom: 125px; /* Adjust as needed */
-    margin-right: 85px; /* Adjust as needed */
+    margin-right: 25px; /* Adjust as needed */
     display: inline-block;
     font-weight: 600;
     font-size: 15px;
@@ -189,4 +189,27 @@ body {
     touch-action: manipulation;
     position: relative;
   }
+  .sidebar {
+    background-color: #8D99AE;
+    box-shadow: #2B2D42 -100px 0px 0 0, 100px 0px 0 #2B2D42;
+    border: 10px solid #2B2D42;
+    border-radius: 200px;
+    position: relative;
+    top: 0;
+    left: 10;
+    height: 100px;
+    width: 100%;
+    z-index: 3;
+    grid-column: 1 / 4;
+    box-sizing: border-box;
+    opacity: 1; /* Initial opacity */
+    transition: opacity 0.5s ease; /* Apply transition to the opacity property */
+  }
+
+  .sidebar::before,
+  .sidebar::after {
+    display: none; /* Remove the pseudo-elements */
+  }
 }
+
+

@@ -181,3 +181,62 @@
 }
 
 
+@media screen and (max-width: 450px) {
+
+  .centered-content,
+  .centered-content2,
+  .centered-content3 {
+    flex-direction: column; /* Change to column layout on smaller screens */
+    align-items: center; /* Center items vertically */
+    padding-left: 0; /* Remove left padding */
+    margin-top: 0; /* Remove top margin */
+  }
+
+  .centered-content {
+    display: flex; /* Use flexbox to align items */
+    grid-row: 2/7;
+    grid-column: 2/2;
+    z-index: 2; /* Set a higher z-index to ensure it's above the background wave */
+   
+    margin-top: 50px;
+  }
+  
+  .centered-content2{
+    grid-row:  8/9;
+    font-size: 10px
+  }
+  .centered-content3{
+    grid-row:  10/14;
+    font-size: 10px
+
+
+  }
+
+
+  .main-text {
+      color: black;
+      font-style: normal;
+      font-size: 25px;
+      position: flex; /* Set the position to relative */
+      z-index: 2; /* Set a higher z-index to ensure it's above the background wave */
+      width: 300px;
+    
+      
+    }
+    
+    .personal-image-container {
+      height: 300px;
+      width:320px;      
+      margin-left: 0px;
+      border: 5px solid #2B2D42; /* Add solid border with color */
+      border-radius: 10px; /* Correct the border-radius value */
+      z-index: 1; /* Set a higher z-index to ensure it's above the background wave */
+      
+      /* Add box shadow */
+      box-shadow: 0 8px 10px #2B2D42 /* Adjust the shadow values as needed */
+    }
+    
+    
+ 
+    
+  }
