@@ -1,5 +1,5 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Home.jsx'; // Updated import
 import ProjectApp from './projectapp.jsx'; // Updated import
@@ -7,7 +7,7 @@ import Projects from './Projects.jsx'
 import './index.css';
 import './ProjectApp.css';
 
-createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
