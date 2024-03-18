@@ -40,13 +40,13 @@ const HomeContent = () => {
                 <div className="spacer layer1"></div>
             </div>
             <div className="centered-content2">
-                <h1><div className="content-headers">About Me:</div>
+                <h1><div className="content-headers">ABOUT ME:</div>
                     I am currently a Junior studying computer science at California State Channel Islands. 
                     I'm currently looking for an internship for Software Engineering! <br />
                 </h1>
             </div>
             <div className="centered-content3">
-            <h1><div className="content-headers">Technologies :</div>  
+            <h1><div className="content-headers">SKILLS:</div>  
                 Python, Java,<br />
                 React, Node JS, JavaScript, HTML, CSS,  <br />
                 Flask, SQLAlchem<br />
