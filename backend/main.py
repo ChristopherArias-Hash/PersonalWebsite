@@ -2,6 +2,7 @@
 from flask import request, jsonify
 from config import app, db
 from models import Contact
+from waitress import serve
 
 # Define endpoint to retrieve all contacts
 @app.route("/contacts", methods=["GET"])
@@ -85,4 +86,4 @@ if __name__ == "__main__":
 
     # Run the application in debug mode
 
-    app.run(host='0.0.0.0', port=5173, debug=True)
+    serve(app, host='0.0.0.0', port=5173)
