@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./components/NavBar";
 import ContactList from "./components/ContactList";
 import ContactForm from "./components/ContactForm";
-import "./ProjectApp.css";
+import "./ContactApp.css";
 
 
 
-function projectApp() {
+function ContactApp() {
   // State variables
   const [contacts, setContacts] = useState([]);
   const NavBarData = [
@@ -82,4 +82,4 @@ function projectApp() {
   );
 }
 
-export default projectApp;
+export default ContactApp;
