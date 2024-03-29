@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Sidebar from "./components/SideBar";
+import Navbar from "./components/NavBar";
 import ContactList from "./components/ContactList";
 import ContactForm from "./components/ContactForm";
 import "./ProjectApp.css";
@@ -9,7 +9,7 @@ import "./ProjectApp.css";
 function projectApp() {
   // State variables
   const [contacts, setContacts] = useState([]);
-  const sidebarData = [
+  const NavBarData = [
     { id: 1, welcome: "", home: "HOME", aboutMe: "ABOUT ME", projects: "PROJECTS", gitHub: "GITHUB" },
   ]
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -56,7 +56,7 @@ function projectApp() {
     <div className="container">
     <div className = "sidebar">
        <div className = "centered-sidebar">
-          <Sidebar sidebar={sidebarData} />
+          <Navbar navbar={NavBarData} />
        </div>
     </div>
        <div className="centered-contact">

@@ -1,25 +1,22 @@
 import React, { useEffect } from 'react';
-import Sidebar from './components/SideBar';
+import Navbar from './components/NavBar';
 import HomeContent from './components/HomeContent';
 import "./Home.css";
 
-const sidebarData = [
+const NavBarData = [
   { id: 1, welcome: "", home: "HOME", projects: "PROJECTS", gitHub: "GITHUB" },
 ];
 
 function Home() {
   useEffect(() => {
-    const layer1 = document.querySelector('.layer1');
-    const sidebar = document.querySelector('.Sidebar'); // Fixed typo
+    const MainWave = document.querySelector('.MainWave');
 
     const handleScroll = () => {
       const scrollThreshold = 10; // Adjust this value as needed
       if (window.scrollY > scrollThreshold || window.innerWidth < 500 || window.innerHeight < 500) {
-        layer1.classList.add('fade-out');
-        sidebar.style.display = 'none'; // Hide the sidebar
+        MainWave.classList.add('fade-out');
       } else {
-        layer1.classList.remove('fade-out');
-        sidebar.style.display = 'block'; // Show the sidebar
+        MainWave.classList.remove('fade-out');
       }
     };
 
@@ -33,16 +30,14 @@ function Home() {
   }, []);
 
   return (
-    <>
-      <div className="container">
-        <div className="sidebar">
-          <div className="centered-sidebar">
-            <Sidebar sidebar={sidebarData} />
-          </div>
+    <div className="container">
+      <div className="navbar">
+        <div className="centered-navbar">
+          <Navbar navbar={NavBarData} />
         </div>
-        <HomeContent />
       </div>
-    </>
+      <HomeContent />
+    </div>
   );
 }
 
