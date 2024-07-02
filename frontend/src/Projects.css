@@ -1,63 +1,61 @@
 .centered-projects-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    grid-row: 2/10;
-    grid-column: 2/2;
+    display: grid;
+    place-items: center; /* Centers items both horizontally and vertically */
+    grid-row: 2 / span 8; /* Adjusted grid row to span 8 rows */
+    grid-column: 2 / span 1; /* Adjusted grid column to span 1 column */
 }
 
 
-.project-headers{
+
+.project-headers {
     text-decoration: underline;
-    color:#2B2D42
-
+    color: #2B2D42;
 }
 
-.project-image{
-    
-    width:400px;
+.project-image-contactapp {
+    width: 400px;
     height: 400px;
+    object-fit: cover; /* Ensures the image fills its container without stretching */
 }
 
-.project-texts{
-    font-size: 20px; /*test/
-    font-weight: bold; /* Add this line to make the text bold */
-   
+.project-image-worldwind{
+    width: 800px;
+    height: 400px;
+    object-fit: cover; /* Ensures the image fills its container without stretching */
+}
+.project-texts {
+    font-size: 20px;
+    text-align: center; /* Center-aligns text within project descriptions */
 }
 
-.project-buttons{
+.project-buttons {
+    display: inline-block;
+    margin-top: 5px; /* Adds some space between text and buttons */
+}
+
+.project-buttons a {
     background-color: #EDF2F4;
     border: 2px solid #2B2D42;
     border-radius: 0px;
-    box-shadow: #2B2D42 0px 4px 0 0;
+    box-shadow: 0px 4px 0 0 #2B2D42; /* Adjusted box-shadow syntax */
     color: #2B2D42;
     cursor: pointer;
-    display: inline-block;
     font-weight: 600;
     font-size: 15px;
     line-height: 30px;
-    width: 126px;
-
+    width: 160px; /* Increased button width for better readability */
     text-align: center;
     text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    position: relative;
-    
+    margin: 10px; /* Adds space between buttons */
 }
 
 @media screen and (max-width: 450px) {
-    .project-image{
-    
-        width:320px;
+    .project-image {
+        width: 320px;
         height: 400px;
     }
 
-    .project-texts{
-        font-size: 20px; /*test/
-        font-weight: bold; /* Add this line to make the text bold */
-       
+    .project-texts {
+        font-size: 16px; /* Reduced font size for smaller screens */
     }
 }

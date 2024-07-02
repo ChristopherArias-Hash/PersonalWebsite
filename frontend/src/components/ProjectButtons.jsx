@@ -1,17 +1,16 @@
+// ProjectButtons.jsx
 import React from "react";
 
 const ProjectButtons = ({ projectbuttons }) => {
-  return (
-    <div>
-      <div>
-        {projectbuttons.map((item) => (
-          <a href={`https://github.com/ChristopherArias-Hash/Contact-app`} target="_blank" className="project-buttons" key={item.id}>            
-            {item.ContactListButton}
-          </a>
-        ))}
-      </div>
-    </div>
-  );
+    return (
+        <div className="project-buttons-container">
+            {projectbuttons.map((item) => (
+                <a href={`https://github.com/ChristopherArias-Hash/${item.link}`} target="_blank" className="project-buttons" key={item.id}>            
+                    {item.buttonText}
+                </a>
+            ))}
+        </div>
+    );
 };
 
 export default ProjectButtons;

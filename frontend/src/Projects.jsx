@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import Navbar from './components/NavBar';
-import HomeContent from './components/ProjectsContent';
-import ProjectButtons from './components/ProjectButtons';
+import ProjectsContent  from './components/ProjectsContent';
 import "./Projects.css";
 
 const NavBarData = [
@@ -21,12 +20,11 @@ function Projects() {
         <div className="navbar">
           <div className="centered-navbar">
             <Navbar navbar={NavBarData} />
-            
           </div>
         </div>
+        
         <div className="centered-projects-content">
-        <HomeContent />
-        <ProjectButtons projectbuttons = {projectButtonsData} />
+        <ProjectsContent  />
         </div>
       </div>
     </>
