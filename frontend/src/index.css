@@ -10,7 +10,7 @@ input, button, label {
   display: grid;
   grid-template-rows: repeat(20,100px); /* Set each row to 50px */
 
-    grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-items: start;
   height: 100vh;
   

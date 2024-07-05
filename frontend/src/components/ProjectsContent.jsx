@@ -1,8 +1,8 @@
 // ProjectsContent.jsx
 import React from "react";
-import ContactAppImage from './images/Contactproject.png';
-import WorldWindImage from './images/Earthquake.png';
-import WorldWindJSONImage from './images/JSONupload.png';
+import ContactAppImage from '../images/Contactproject.png';
+import WorldWindImage from '../images/Earthquake.png';
+import WorldWindJSONImage from '../images/JSONupload.png';
 import ProjectButtons from './ProjectButtons'; // Import ProjectButtons component
 
 const ProjectsContent = () => {

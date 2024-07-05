@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
-import Navbar from './components/NavBar';
-import HomeContent from './components/HomeContent';
+import Navbar from '../components/NavBar';
+import HomeContent from '../components/HomeContent';
 import "./Home.css";
-
 
 const NavBarData = [
   { id: 1, welcome: "", home: "HOME", projects: "PROJECTS", gitHub: "GITHUB" },

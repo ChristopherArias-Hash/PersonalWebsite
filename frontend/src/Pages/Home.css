@@ -5,6 +5,9 @@
   background-position: center;
   background-size: cover; 
 
+  
+
+
 }
 
 .MainWave {
@@ -15,7 +18,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('./MainWave.svg');
+  background-image: url('../images/MainWave.svg')   ;
+  background-size: cover;
+  background-repeat: no-repeat;
   z-index: -1; /* Set an even lower z-index to place it behind the content */
   opacity: 1;
   transition: opacity 1.0s ease; /* Add a transition for opacity */
@@ -30,25 +35,22 @@
 }
 
 .SideWave1 {
-
   max-width: 100%;
+  background-image: url('../images/SideWave1.svg');
   top: 0;
   left: 0; /* Adjust the left position to keep it in place */
   width: 100%; /* Change the width as needed */
   height: 100%;
-  background-image: url('./SideWave1.svg');
   z-index: -1; /* Set an even lower z-index to place it behind the content */
   opacity: 1;
 }
 
 .SideWave2 {
-  
-  max-width: 100%;
+  background-image: url('../images/SideWave2.svg');
   top: 0;
   left: 0; /* Adjust the left position to keep it in place */
   width: 100%; /* Change the width as needed */
   height: 100%;
-  background-image: url('./SideWave2.svg');
   z-index: -1; /* Set an even lower z-index to place it behind the content */
   opacity: 1;
 }
