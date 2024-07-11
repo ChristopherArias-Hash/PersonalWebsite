@@ -1,8 +1,9 @@
 .centered-projects-content {
     display: grid;
     place-items: center; /* Centers items both horizontally and vertically */
-    grid-row: 2 / span 8; /* Adjusted grid row to span 8 rows */
+    grid-row: 2 / span 20; /* Adjusted grid row to span 8 rows */
     grid-column: 2 / span 1; /* Adjusted grid column to span 1 column */
+    padding:20px;
 }
 
 
@@ -12,15 +13,16 @@
     color: #2B2D42;
 }
 
-.project-image-contactapp {
-    width: 400px;
-    height: 400px;
-    object-fit: cover; /* Ensures the image fills its container without stretching */
+.contact-app-photos{
+    width:600px;
+    height:800px;
+    
 }
 
+
 .project-image-worldwind{
-    width: 800px;
-    height: 400px;
+    width: 1000px;
+    height: 600px;
     object-fit: cover; /* Ensures the image fills its container without stretching */
 }
 .project-texts {

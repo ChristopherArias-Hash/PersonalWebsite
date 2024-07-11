@@ -49,6 +49,8 @@ const HomeContent = () => {
                     Python, Java,<br />
                     React, Node JS, JavaScript, HTML, CSS,  <br />
                     Flask, SQLAlchemy<br />
+                    Git, Github<br />
+                   
                 </h1>
                 <h1>
                     <div className="content-headers">Certifications:</div>  

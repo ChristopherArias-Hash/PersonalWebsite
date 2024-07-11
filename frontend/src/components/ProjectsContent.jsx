@@ -1,6 +1,10 @@
 // ProjectsContent.jsx
 import React from "react";
-import ContactAppImage from '../images/Contactproject.png';
+import ContactMainImage from '../images/ContactMain.png';
+import ContactEditImage from '../images/ContactEdit.png';
+import ContactCreateImage from '../images/ContactCreate.png';
+import ContactSearchImage from '../images/ContactSearch.png';
+import ContactViewImage from '../images/ContactView.png';
 import WorldWindImage from '../images/Earthquake.png';
 import WorldWindJSONImage from '../images/JSONupload.png';
 import ProjectButtons from './ProjectButtons'; // Import ProjectButtons component
@@ -9,10 +13,19 @@ const ProjectsContent = () => {
     return (
         <>
             <div className="centered-projects-content">
-                <h1 className="project-headers">Contact Management Project</h1>
-                <img src={ContactAppImage} alt="Photo of app" className="project-image-contactapp" />
-                <p className="project-texts">I developed a full-stack web application using React and Flask with SQLAlchemy, 
-                    creating a RESTful API for managing contacts stored in a relational database with HTML/CSS for the UI.</p>
+                <h1 className="project-headers">Contact Manager Project</h1>
+          
+                    <img src={ContactMainImage} alt="Photo of app" className="contact-app-photos"/>
+                    <img src={ContactSearchImage} alt="Photo of search" className="contact-app-photos" />
+                    <img src={ContactCreateImage} alt="Photo of create" className="contact-app-photos"/>
+                    <img src={ContactViewImage} alt="Photo of view"   className="contact-app-photos"/>
+                    <img src={ContactEditImage} alt="Photo of edit"   className="contact-app-photos"/>
+          
+                    <p className="project-texts">
+                    I developed a full-stack web application using React and Spring Boot, integrated with a SQL database. This application features a RESTful API for managing contacts. 
+                    The user interface is built with HTML and CSS, providing a seamless experience for creating, viewing, editing, and deleting contacts. 
+                    Each contact entry includes a name, last name, email, notes, and an option to upload a profile picture.
+                    </p>
                 <div className = "project-buttons">
                 <ProjectButtons projectbuttons={[{ id: 1, link: "Contact-app", buttonText: "Open Contact App" }]} />
                 </div>
