@@ -1,9 +1,13 @@
 .centered-projects-content {
-    display: grid;
-    place-items: center; /* Centers items both horizontally and vertically */
+    display: flex; /* Use flexbox to align items */
+   
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     grid-row: 2 / span 20; /* Adjusted grid row to span 8 rows */
     grid-column: 2 / span 1; /* Adjusted grid column to span 1 column */
     padding:20px;
+    
 }
 
 .project-headers {
@@ -11,52 +15,86 @@
     color: #2B2D42;
 }
 
-.contact-appc-photos{
-    width:600px;
-    height:800px;
-    
+.contact-app-photos {
+    width: 600px;
+    height: 800px;
 }
 
-
-.project-image-worldwind{
+.project-image-worldwind {
     width: 1000px;
     height: 600px;
     object-fit: cover; /* Ensures the image fills its container without stretching */
 }
+
 .project-texts {
     font-size: 20px;
     text-align: center; /* Center-aligns text within project descriptions */
 }
 
-.project-buttons {
-    display: inline-block;
-    margin-top: 5px; /* Adds some space between text and buttons */
+.project-buttons:active {
+    box-shadow: #818182 4px 4px 0 0;
+    transform: translate(2px, 2px);
 }
 
 .project-buttons a {
+    display: inline-block;
+    text-align: center;
     background-color: #EDF2F4;
     border: 2px solid #2B2D42;
     border-radius: 0px;
     box-shadow: 0px 4px 0 0 #2B2D42; /* Adjusted box-shadow syntax */
     color: #2B2D42;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 15px;
-    line-height: 30px;
-    width: 160px; /* Increased button width for better readability */
-    text-align: center;
+    width: 200px; /* Increased button width for better readability */
+    line-height: 50px;
+    height: 50px;
     text-decoration: none;
-    margin: 10px; /* Adds space between buttons */
 }
 
+/* Media Queries for smaller screens */
+@media (max-width: 1200px) {
+    .project-image-worldwind {
+        width: 800px;
+        height: 500px;
+    }
+}
 
-@media screen and (max-width: 450px) {
-    .project-image {
-        width: 320px;
+@media (max-width: 900px) {
+    .project-image-worldwind {
+        width: 600px;
         height: 400px;
     }
 
     .project-texts {
-        font-size: 16px; /* Reduced font size for smaller screens */
+        font-size: 18px;
     }
+
+}
+
+@media (max-width: 600px) {
+    .project-image-worldwind {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-texts {
+        font-size: 16px;
+    }
+
+    
+}
+
+@media (max-width: 450px) {
+    .project-image-worldwind {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-texts {
+        font-size: 14px;
+    }
+
+ 
 }

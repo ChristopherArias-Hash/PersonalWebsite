@@ -9,7 +9,6 @@ input, button, label {
 .container {
   display: grid;
   grid-template-rows: repeat(20,100px); /* Set each row to 50px */
-
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: start;
   height: 100vh;
@@ -67,7 +66,6 @@ body {
   box-shadow: -10px 0 10px -10px #2B2D42; /* Adjust the shadow color and size as needed */
 }
 
-
 .navbuttons {
   background-color: #EDF2F4;
   border: 2px solid #2B2D42;
@@ -91,8 +89,6 @@ body {
   position: relative;
   
 }
-
-
 
 .navbuttons:active {
   box-shadow: #2B2D42  2px 2px 0 0;
