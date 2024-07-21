@@ -6,14 +6,12 @@
     padding:20px;
 }
 
-
-
 .project-headers {
     text-decoration: underline;
     color: #2B2D42;
 }
 
-.contact-app-photos{
+.contact-appc-photos{
     width:600px;
     height:800px;
     
@@ -50,6 +48,7 @@
     text-decoration: none;
     margin: 10px; /* Adds space between buttons */
 }
+
 
 @media screen and (max-width: 450px) {
     .project-image {

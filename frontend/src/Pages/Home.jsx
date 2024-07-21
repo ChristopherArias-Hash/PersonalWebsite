@@ -4,7 +4,7 @@ import HomeContent from '../components/HomeContent';
 import "./Home.css";
 
 const NavBarData = [
-  { id: 1, welcome: "", home: "HOME", projects: "PROJECTS", gitHub: "GITHUB" },
+  {home: "HOME", projects: "PROJECTS", gitHub: "GITHUB" },
 ];
 
 function Home() {
