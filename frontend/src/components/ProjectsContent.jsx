@@ -16,7 +16,6 @@ const ProjectsContent = () => {
     { image: ContactCreateImage, altText: "Photo of create screen" },
     { image: ContactViewImage, altText: "Photo of view screen" },
     { image: ContactSearchImage, altText: "Photo of search screen" },
-    
   ];
 
   const earthquakeProjectImages = [
@@ -49,7 +48,11 @@ const ProjectsContent = () => {
         <div className="project-buttons">
           <ProjectButtons
             projectbuttons={[
-              { id: 1, link: "Contact-app", buttonText: "Open Contact App" },
+              {
+                id: 1,
+                link: "Java-Contact-app",
+                buttonText: "Open Contact App",
+              },
             ]}
           />
         </div>
