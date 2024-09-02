@@ -31,7 +31,7 @@ const ContactView = ({ contact, closeModal }) => {
       )}
       
       {/* Button to close the modal */}
-      <button onClick={closeModal}>Close</button>
+      <button onClick={closeModal}>close</button>
     </div>
   );
 };
