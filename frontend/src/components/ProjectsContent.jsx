@@ -7,7 +7,9 @@ import ContactSearchImage from "../images/ContactSearch.png";
 import ContactViewImage from "../images/ContactView.png";
 import WorldWindImage from "../images/Earthquake.png";
 import WorldWindJSONImage from "../images/JSONupload.png";
-import ProjectButtons from "./ProjectButtons"; // Import ProjectButtons component
+import ProjectButtons from "./ProjectButtons"; 
+
+
 
 const ProjectsContent = () => {
   const contactProjectImages = [
@@ -60,7 +62,7 @@ const ProjectsContent = () => {
         <h1 className="project-headers">
           Real-Time Earthquake Tracking with NASA WorldWind
         </h1>
-
+     
         {earthquakeProjectImages.map((earthquakeProjectImage, index) => (
           <div key={index}>
             <img
@@ -70,7 +72,7 @@ const ProjectsContent = () => {
             ></img>
           </div>
         ))}
-
+        
         <p className="project-texts">
           A Java application uses NASA's WorldWind SDK to visualize network data
           and real-time earthquake information from the USGS API. It provides

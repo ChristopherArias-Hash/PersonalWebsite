@@ -133,6 +133,8 @@
   grid-column: 2/2;
 }
 
+
+
 @media screen and (max-width: 800px) {
   .centered-content,
   .centered-content2,
